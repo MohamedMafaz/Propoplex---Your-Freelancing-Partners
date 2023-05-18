@@ -6,4 +6,4 @@ app_dir = os.path.abspath(os.path.dirname(__file__))
 sys.path.insert(0, app_dir)
 
 # Import your Flask application instance
-from index.py import app as application
+from index import app as application
