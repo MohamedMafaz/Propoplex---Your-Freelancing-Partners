@@ -1,14 +1,9 @@
-from flask import Flask
+import sys
+import os
 
-app = Flask(__name__)
+# Add the directory containing your Flask application to the sys.path
+app_dir = os.path.abspath(os.path.dirname(__file__))
+sys.path.insert(0, app_dir)
 
-@app.route('/')
-def hello():
-    return 'Hello, World!'
-
-# Additional routes and functionality can be added here
-
-if __name__ == '__main__':
-    app.run()
-
-application = app  # Add this line to expose the Flask app as 'application' attribute
+# Import your Flask application instance
+from index.py import app as application
