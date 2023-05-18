@@ -2,3 +2,4 @@ flask
 bardapi
 requests
 gevent
+gunicorn
