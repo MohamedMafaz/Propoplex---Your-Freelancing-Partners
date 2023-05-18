@@ -10,3 +10,5 @@ def hello():
 
 if __name__ == '__main__':
     app.run()
+
+application = app  # Add this line to expose the Flask app as 'application' attribute
